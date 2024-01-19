@@ -1,0 +1,77 @@
+$colores: #32a852, #a4a832, #a83232, #32a8a4, #3256a8, #7932a8, #a8327f, #d9a877;
+
+@function randomColor() {
+    $num: random(length($colores));
+    @return nth($colores, $num);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.circulitos {
+    width: 800px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        width: 200px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .circulo {
+        width: 180px;
+        height: 180px;
+        margin: 10px;
+        border-radius: 200px;   
+    }
+
+    @for $i from 5 through 9 {
+        $color: randomColor();
+        .circulo:nth-child(#{$i}) {
+            background-color: $color;
+        }
+
+        @if $i == 5 {
+            .circulo:nth-child(#{$i + 4}) {
+                background-color: complement($color);
+            }
+        } @else if $i == 6 {
+            .circulo:nth-child(#{$i + 4}) {
+                background-color: saturate($color, 100%);
+            }
+        } @else if $i == 7 {
+            .circulo:nth-child(#{$i + 4}) {
+                background-color: red;
+            }
+            .circulo:nth-child(#{$i + 8}) {
+                background-color: mix($color, invert($color));
+            }
+        } @else if $i == 8 {
+            .circulo:nth-child(#{$i + 4}) {
+                background-color: grayscale($color);
+            }
+        }
+    }
+
+    
+
+}

@@ -1,0 +1,75 @@
+$border: 2px solid black;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    background-color: rgb(49, 49, 163);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2, h5 {
+    margin: 15px;
+    letter-spacing: 0.25em
+}
+
+table {
+
+    background-color: white;
+    border: $border;
+
+    tr {
+        @for $i from 1 through 9 {
+            &:nth-child(#{$i}) .hora:hover {
+                @if $i%2 == 0 {
+                    background-color: rgb(49, 49, 49);
+                } @else {
+                    background-color: rgb(163, 163, 163);
+                }
+            }       
+        }
+
+        &:first-child th:first-child:hover p{
+            background-color: blue;
+        }
+        
+        &:first-child th:not(:first-child):hover p {
+            background-color: red;
+        }
+        
+
+        th, td {
+            width: 200px;
+            height: 75px;
+        }
+    
+        th {
+            background-color: rgb(99, 99, 99);
+        }
+    
+        td {
+            overflow: hidden;
+            border: $border;
+    
+            p {
+                font-weight: bold;
+                text-align: center;
+                background-color: black;
+    
+                border-top-right-radius: 30%;
+                border-bottom-right-radius: 30%;
+                border-top-left-radius: 30%;
+                border-bottom-left-radius: 30%;
+            }
+    
+        }
+    }
+}

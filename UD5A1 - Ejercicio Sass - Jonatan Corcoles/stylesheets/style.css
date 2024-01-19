@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 600px;
+  height: 400px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  letter-spacing: 0.25em;
+}
+table td {
+  border: 2px solid black;
+  text-align: center;
+  color: white;
+}
+table tr:nth-child(2) {
+  background-color: #3281A8;
+}
+table tr:nth-child(2):hover td {
+  color: #3281A8;
+}
+table tr:nth-child(2):hover td:first-child {
+  background-color: white;
+}
+table tr:nth-child(3) {
+  background-color: #A83232;
+}
+table tr:nth-child(3):hover td {
+  color: #A83232;
+}
+table tr:nth-child(3):hover td:first-child {
+  background-color: white;
+}
+table tr:nth-child(4) {
+  background-color: #9EA832;
+}
+table tr:nth-child(4):hover td {
+  color: #9EA832;
+}
+table tr:nth-child(4):hover td:first-child {
+  background-color: white;
+}
+table tr:nth-child(5) {
+  background-color: #32A838;
+}
+table tr:nth-child(5):hover td {
+  color: #32A838;
+}
+table tr:nth-child(5):hover td:first-child {
+  background-color: white;
+}
+table tr:nth-child(6) {
+  background-color: #A88132;
+}
+table tr:nth-child(6):hover td {
+  color: #A88132;
+}
+table tr:nth-child(6):hover td:first-child {
+  background-color: white;
+}
+table td:last-child {
+  width: 85%;
+}
+
+/*# sourceMappingURL=style.css.map */

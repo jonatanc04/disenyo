@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circulitos {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.circulitos p {
+  width: 200px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.circulitos .circulo {
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 200px;
+}
+.circulitos .circulo:nth-child(5) {
+  background-color: #3256a8;
+}
+.circulitos .circulo:nth-child(9) {
+  background-color: #a88432;
+}
+.circulitos .circulo:nth-child(6) {
+  background-color: #a8327f;
+}
+.circulitos .circulo:nth-child(10) {
+  background-color: #da008e;
+}
+.circulitos .circulo:nth-child(7) {
+  background-color: #a4a832;
+}
+.circulitos .circulo:nth-child(11) {
+  background-color: #5b57cd;
+}
+.circulitos .circulo:nth-child(15) {
+  background-color: gray;
+}
+.circulitos .circulo:nth-child(8) {
+  background-color: #32a852;
+}
+.circulitos .circulo:nth-child(12) {
+  background-color: #6d6d6d;
+}
+.circulitos .circulo:nth-child(9) {
+  background-color: #32a8a4;
+}
+
+/*# sourceMappingURL=style.css.map */

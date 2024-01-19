@@ -1,0 +1,75 @@
+$azul: #3281A8;
+$rojo: #A83232;
+$amarillo: #9EA832;
+$verde: #32A838;
+$naranja: #A88132;
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width: 600px;
+    height: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    
+    td {
+        border: 2px solid black;
+        text-align: center;
+        color: white;
+    }
+    tr:nth-child(2) {
+        background-color: $azul;
+        &:hover td {
+            color: $azul;
+            &:first-child {
+                background-color: white;
+            }
+        }
+    }
+    tr:nth-child(3) {
+        background-color: $rojo;
+        &:hover td {
+            color: $rojo;
+            &:first-child {
+                background-color: white;
+            }
+        }
+    }
+    tr:nth-child(4) {
+        background-color: $amarillo;
+        &:hover td {
+            color: $amarillo;
+            &:first-child {
+                background-color: white;
+            }
+        }
+    }
+    tr:nth-child(5) {
+        background-color: $verde;
+        &:hover td {
+            color: $verde;
+            &:first-child {
+                background-color: white;
+            }
+        }
+    }
+    tr:nth-child(6) {
+        background-color: $naranja;
+        &:hover td {
+            color: $naranja;
+            &:first-child {
+                background-color: white;
+            }
+        }
+    }
+    td:last-child {
+        width: 85%;
+    }
+}
