@@ -17,8 +17,22 @@ html, body {
 }
 
 h2, h5 {
+    cursor: pointer;
     margin: 15px;
     letter-spacing: 0.25em
+}
+
+h2:hover, h5:hover {
+    animation-timing-function: ease-in;
+    animation-name: idayvuelta;
+    animation-duration: 0.4s;
+    animation-direction: alternate;
+}
+
+@keyframes idayvuelta {
+    0%  { transform: scale(1, 1); }
+    50% { transform: scale(0.7, 0.7); }
+    100% { transform: scale(1, 1); }
 }
 
 table {
@@ -36,17 +50,22 @@ table {
                 }
             }       
         }
-
-        &:first-child th:first-child:hover p{
-            background-color: blue;
-        }
         
         &:first-child th:not(:first-child):hover p {
-            background-color: red;
+            animation-timing-function: ease-in;
+            animation-name: neblina;
+            animation-duration: 0.4s;
+            animation-direction: alternate;
+        }
+
+        @keyframes neblina {
+            0%  { transform: scale(0.5, 1); filter: blur(4px); }
+            100% { transform: scale(1, 1); }
         }
         
 
         th, td {
+            cursor: pointer;
             width: 200px;
             height: 75px;
         }
@@ -69,7 +88,29 @@ table {
                 border-top-left-radius: 30%;
                 border-bottom-left-radius: 30%;
             }
-    
+        }
+    }
+
+    .comer {
+        background-color: red;
+        p {
+            background: none;
+        }
+        &:hover {
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-name: psicorayo;
+            animation-duration: 1s;
+            animation-direction: alternate;
+        }
+
+        @keyframes psicorayo {
+            0%  { background-color: mediumorchid; }
+            20% { background-color: blue; }
+            40% { background-color: green; }
+            60% { background-color: yellow; }
+            80% { background-color: orange; }
+            100% { background-color: red; }
         }
     }
 }
