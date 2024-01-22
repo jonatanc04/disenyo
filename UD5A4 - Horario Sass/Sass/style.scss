@@ -89,6 +89,57 @@ table {
                 border-bottom-left-radius: 30%;
             }
         }
+
+        .back {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .gow {
+            background-image: url("../imgs/gow.webp");
+        }
+
+        .poke {
+            background-size: contain;
+            background-image: url("../imgs/pokemon.png");
+        }
+
+        .stray {
+            background-image: url("../imgs/stray.jpg");
+        }
+
+        .ass {
+            background-image: url("../imgs/assassins.jpg");
+        }
+
+        .spi {
+            background-image: url("../imgs/spidy.jpg");
+        }
+
+        .rat {
+            background-image: url("../imgs/rndk.webp");
+        }
+
+        .ghos {
+            background-image: url("../imgs/ghost.jpg");
+        }
+
+        .yow {
+            background-image: url("../imgs/yow.png");
+        }
+
+        .edit {
+            background-image: url("../imgs/stream.jpeg");
+        }
+
+        .pat {
+            background-image: url("../imgs/patreon.webp");
+        }
+
+        .rrss {
+            background-image: url("../imgs/insta.jpg");
+        }
     }
 
     .comer {

@@ -104,6 +104,45 @@ table tr td p {
   border-top-left-radius: 30%;
   border-bottom-left-radius: 30%;
 }
+table tr .back {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+table tr .gow {
+  background-image: url("../imgs/gow.webp");
+}
+table tr .poke {
+  background-size: contain;
+  background-image: url("../imgs/pokemon.png");
+}
+table tr .stray {
+  background-image: url("../imgs/stray.jpg");
+}
+table tr .ass {
+  background-image: url("../imgs/assassins.jpg");
+}
+table tr .spi {
+  background-image: url("../imgs/spidy.jpg");
+}
+table tr .rat {
+  background-image: url("../imgs/rndk.webp");
+}
+table tr .ghos {
+  background-image: url("../imgs/ghost.jpg");
+}
+table tr .yow {
+  background-image: url("../imgs/yow.png");
+}
+table tr .edit {
+  background-image: url("../imgs/stream.jpeg");
+}
+table tr .pat {
+  background-image: url("../imgs/patreon.webp");
+}
+table tr .rrss {
+  background-image: url("../imgs/insta.jpg");
+}
 table .comer {
   background-color: red;
 }
