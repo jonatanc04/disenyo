@@ -175,7 +175,7 @@ table tr .rat:hover {
   }
   100% {
     transform: scale(1.5, 1.5);
-    backdrop-filter: invert(100%);
+    background-image: invert(100%);
   }
 }
 table tr .ghos {
