@@ -77,6 +77,8 @@ table {
         td {
             overflow: hidden;
             border: $border;
+            text-align: center;
+            font-weight: bold;
     
             p {
                 font-weight: bold;
@@ -87,6 +89,10 @@ table {
                 border-bottom-right-radius: 30%;
                 border-top-left-radius: 30%;
                 border-bottom-left-radius: 30%;
+            }
+
+            &:hover p {
+                visibility: hidden;
             }
         }
 
@@ -101,8 +107,20 @@ table {
         }
 
         .poke {
+            background-color: white;
             background-size: contain;
             background-image: url("../imgs/pokemon.png");
+
+            &:hover {
+                animation-timing-function: ease-in;
+                animation-name: aumento;
+                animation-duration: 4s;
+            }
+
+            @keyframes aumento {
+                0%  { transform: scale(1, 1); background-position-x: left 100px; }
+                100% { transform: scale(1.5, 1.5) translateY(30px); background-position-x: right 100px;}
+            }
         }
 
         .stray {
@@ -115,10 +133,34 @@ table {
 
         .spi {
             background-image: url("../imgs/spidy.jpg");
+            background-color: rgb(99, 7, 7);
+
+            &:hover {
+                animation-timing-function: ease-in;
+                animation-name: aumento2;
+                animation-duration: 4s;
+            }
+
+            @keyframes aumento2 {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5); background-position-y: top 20px;}
+            }
         }
 
         .rat {
             background-image: url("../imgs/rndk.webp");
+
+            &:hover {
+                animation-timing-function: ease-in;
+                animation-name: aumento3;
+                animation-duration: 3s;
+            }
+
+            @keyframes aumento3 {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5); 
+                backdrop-filter: invert(100%);}
+            }
         }
 
         .ghos {
@@ -151,7 +193,7 @@ table {
             animation-timing-function: linear;
             animation-iteration-count: infinite;
             animation-name: psicorayo;
-            animation-duration: 1s;
+            animation-duration: 5s;
             animation-direction: alternate;
         }
 
