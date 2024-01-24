@@ -162,6 +162,20 @@ table tr .stray {
 table tr .ass {
   background-image: url("../imgs/assassins.jpg");
 }
+table tr .ass:hover {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-name: bordestras;
+  animation-duration: 3s;
+}
+@keyframes bordestras {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5) translateY(30px);
+  }
+}
 table tr .spi {
   background-image: url("../imgs/spidy.jpg");
   background-color: rgb(99, 7, 7);

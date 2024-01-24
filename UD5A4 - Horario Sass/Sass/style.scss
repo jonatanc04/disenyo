@@ -144,6 +144,18 @@ table {
 
         .ass {
             background-image: url("../imgs/assassins.jpg");
+
+             &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: bordestras;
+                animation-duration: 3s;
+            }
+
+            @keyframes bordestras {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5) translateY(30px);}
+            }
         }
 
         .spi {
