@@ -140,12 +140,41 @@ table {
 
         .stray {
             background-image: url("../imgs/stray.jpg");
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: gato;
+                animation-duration: 3s;
+            }
+
+            @keyframes gato {
+                0%  { 
+                    transform: scale(1, 1);
+                    background-size: 600px;
+                    mask-image: radial-gradient(circle, black 10%, rgba(0,0,0,0.5) 90%)
+                }
+                25% {
+                    mask-image: radial-gradient(circle, black 10%, rgba(0,0,0,0.5) 85%)
+                }
+                50% {
+                    mask-image: radial-gradient(circle, black 10%, rgba(0,0,0,0.5) 80%)
+                }
+                75% {
+                    mask-image: radial-gradient(circle, black 10%, rgba(0,0,0,0.5) 75%)
+                }
+                100% { 
+                    background-size: 100%;
+                    transform: scale(1.5, 1.5) translateY(30px);
+                    mask-image: radial-gradient(circle, black 10%, rgba(0,0,0,0.5) 70%)
+                }
+            }
         }
 
         .ass {
             background-image: url("../imgs/assassins.jpg");
 
-             &:hover {
+            &:hover {
                 animation-fill-mode: forwards;
                 animation-timing-function: ease-in;
                 animation-name: bordestras;
@@ -153,8 +182,23 @@ table {
             }
 
             @keyframes bordestras {
-                0%  { transform: scale(1, 1); }
-                100% { transform: scale(1.5, 1.5) translateY(30px);}
+                0%  { 
+                    transform: scale(1, 1);
+                    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 90%)
+                }
+                25% {
+                    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 85%)
+                }
+                50% {
+                    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 80%)
+                }
+                75% {
+                    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 75%)
+                }
+                100% { 
+                    transform: scale(1.5, 1.5) translateY(30px);
+                    mask-image: radial-gradient(circle, black 50%, rgba(0,0,0,0.5) 70%)
+                }
             }
         }
 
@@ -244,6 +288,19 @@ table {
 
         .pat {
             background-image: url("../imgs/patreon.webp");
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: escuchoborroso;
+                animation-duration: 3s;
+            }
+
+            @keyframes escuchoborroso {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5) translateY(30px);
+                filter: blur(5px);}
+            }
         }
 
         .rrss {
