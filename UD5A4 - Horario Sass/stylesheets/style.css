@@ -7,6 +7,7 @@
 html, body {
   background-color: rgb(49, 49, 163);
   color: white;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,6 +117,23 @@ table tr .back {
 }
 table tr .gow {
   background-image: url("../imgs/gow.webp");
+  background-color: rgb(108, 171, 223);
+}
+table tr .gow:hover {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-name: subir;
+  animation-duration: 4s;
+}
+@keyframes subir {
+  0% {
+    transform: scale(1, 1);
+    background-position-y: top 50px;
+  }
+  100% {
+    transform: scale(1.5, 1.5) translateY(30px);
+    background-position-y: bottom 50px;
+  }
 }
 table tr .poke {
   background-color: white;
@@ -123,6 +141,7 @@ table tr .poke {
   background-image: url("../imgs/pokemon.png");
 }
 table tr .poke:hover {
+  animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-name: aumento;
   animation-duration: 4s;
@@ -148,6 +167,7 @@ table tr .spi {
   background-color: rgb(99, 7, 7);
 }
 table tr .spi:hover {
+  animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-name: aumento2;
   animation-duration: 4s;
@@ -165,6 +185,7 @@ table tr .rat {
   background-image: url("../imgs/rndk.webp");
 }
 table tr .rat:hover {
+  animation-fill-mode: forwards;
   animation-timing-function: ease-in;
   animation-name: aumento3;
   animation-duration: 3s;
@@ -175,23 +196,81 @@ table tr .rat:hover {
   }
   100% {
     transform: scale(1.5, 1.5) translateY(30px);
-    backdrop-filter: invert(100%);
+    filter: invert(100%);
   }
 }
 table tr .ghos {
   background-image: url("../imgs/ghost.jpg");
 }
+table tr .ghos:hover {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-name: aumento4;
+  animation-duration: 3s;
+}
+@keyframes aumento4 {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5) translateY(30px);
+    filter: sepia(100%);
+  }
+}
 table tr .yow {
   background-image: url("../imgs/yow.png");
+  background-color: white;
+}
+table tr .yow:hover {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-name: tornado;
+  animation-duration: 3s;
+}
+@keyframes tornado {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5) translateY(30px) rotateX(360deg);
+  }
 }
 table tr .edit {
   background-image: url("../imgs/stream.jpeg");
+}
+table tr .edit:hover {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-name: eiscue;
+  animation-duration: 3s;
+}
+@keyframes eiscue {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5) translateY(30px) skew(30deg, 30deg);
+  }
 }
 table tr .pat {
   background-image: url("../imgs/patreon.webp");
 }
 table tr .rrss {
   background-image: url("../imgs/insta.jpg");
+}
+table tr .rrss:hover {
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+  animation-name: rotar;
+  animation-duration: 3s;
+}
+@keyframes rotar {
+  0% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1.5, 1.5) translateY(30px) rotate(360deg);
+  }
 }
 table .comer {
   background-color: red;

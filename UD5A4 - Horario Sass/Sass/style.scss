@@ -9,6 +9,7 @@ $border: 2px solid black;
 html, body {
     background-color: rgb(49, 49, 163);
     color: white;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -104,6 +105,19 @@ table {
 
         .gow {
             background-image: url("../imgs/gow.webp");
+            background-color: rgb(108, 171, 223);
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: subir;
+                animation-duration: 4s;
+            }
+
+            @keyframes subir {
+                0%  { transform: scale(1, 1); background-position-y: top 50px; }
+                100% { transform: scale(1.5, 1.5) translateY(30px); background-position-y: bottom 50px;}
+            }
         }
 
         .poke {
@@ -112,6 +126,7 @@ table {
             background-image: url("../imgs/pokemon.png");
 
             &:hover {
+                animation-fill-mode: forwards;
                 animation-timing-function: ease-in;
                 animation-name: aumento;
                 animation-duration: 4s;
@@ -136,6 +151,7 @@ table {
             background-color: rgb(99, 7, 7);
 
             &:hover {
+                animation-fill-mode: forwards;
                 animation-timing-function: ease-in;
                 animation-name: aumento2;
                 animation-duration: 4s;
@@ -151,6 +167,7 @@ table {
             background-image: url("../imgs/rndk.webp");
 
             &:hover {
+                animation-fill-mode: forwards;
                 animation-timing-function: ease-in;
                 animation-name: aumento3;
                 animation-duration: 3s;
@@ -159,20 +176,58 @@ table {
             @keyframes aumento3 {
                 0%  { transform: scale(1, 1); }
                 100% { transform: scale(1.5, 1.5) translateY(30px); 
-                backdrop-filter: invert(100%);}
+                filter: invert(100%);}
             }
         }
 
         .ghos {
             background-image: url("../imgs/ghost.jpg");
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: aumento4;
+                animation-duration: 3s;
+            }
+
+            @keyframes aumento4 {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5) translateY(30px); 
+                filter: sepia(100%);}
+            }
         }
 
         .yow {
             background-image: url("../imgs/yow.png");
+            background-color: white;
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: tornado;
+                animation-duration: 3s;
+            }
+
+            @keyframes tornado {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5) translateY(30px) rotateX(360deg);}
+            }
         }
 
         .edit {
             background-image: url("../imgs/stream.jpeg");
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: eiscue;
+                animation-duration: 3s;
+            }
+
+            @keyframes eiscue {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5) translateY(30px) skew(30deg, 30deg);}
+            }
         }
 
         .pat {
@@ -181,6 +236,18 @@ table {
 
         .rrss {
             background-image: url("../imgs/insta.jpg");
+
+            &:hover {
+                animation-fill-mode: forwards;
+                animation-timing-function: ease-in;
+                animation-name: rotar;
+                animation-duration: 3s;
+            }
+
+            @keyframes rotar {
+                0%  { transform: scale(1, 1); }
+                100% { transform: scale(1.5, 1.5) translateY(30px) rotate(360deg); }
+            }
         }
     }
 
