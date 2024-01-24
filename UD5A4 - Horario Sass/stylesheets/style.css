@@ -157,7 +157,7 @@ table tr .spi:hover {
     transform: scale(1, 1);
   }
   100% {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5) translateY(30px);
     background-position-y: top 20px;
   }
 }
@@ -174,8 +174,8 @@ table tr .rat:hover {
     transform: scale(1, 1);
   }
   100% {
-    transform: scale(1.5, 1.5);
-    background-image: invert(100%);
+    transform: scale(1.5, 1.5) translateY(30px);
+    backdrop-filter: invert(100%);
   }
 }
 table tr .ghos {
